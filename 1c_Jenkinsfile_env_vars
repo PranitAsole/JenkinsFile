@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        TEST_ENV = 'dev'
+        TEST_ENV = 'test'
     }
     stages {
         stage('Build') {
             environment {
-                TEST_ENV = 'qa'
+                TEST_ENV = 'pranit'
             }
             steps {
                 sh 'printenv'
