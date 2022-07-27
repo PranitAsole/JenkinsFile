@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                retry(1000000000000) {
+                retry(10) {
                     sh 'echo123 hello'
                 }
                 timeout(time: 5, unit: 'SECONDS') {
